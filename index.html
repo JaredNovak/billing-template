@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+<body>
+
+    <div id="background-decoration"></div>
+
+
+    <div class="main-container">
+
+
+
+        <div class="directory-container">
+
+
+            <div class="user-container">
+                <img src="https://pbr-affd.kxcdn.com/passets/photo/IL/1836597042-85B.JPG" alt="">
+
+                <div class="user-information">
+                    <p id="name">Joshua Novak</p>
+                    <p id="username">@jnovak</p>
+                </div>
+            </div>
+
+            <div class="navigation-menu">
+                <div class="navigation-items">
+                    <div class="navigation-item active" id="general">
+                        <i class="bi bi-collection" id="icon"></i>
+                        <p id="item">General</p>
+                    </div>
+                    <div class="navigation-item" id="password">
+                        <i class="bi bi-shield-lock" id="icon"></i>
+                        <p id="item">Password</p>
+                    </div>
+                    <div class="navigation-item" id="invitations">
+                        <i class="bi bi-envelope" id="icon"></i>
+                        <p id="item">Invitations</p>
+                    </div>
+                    <div class="navigation-item" id="billing">
+                        <i class="bi bi-receipt" id="icon"></i>
+                        <p id="item">Billing</p>
+                    </div>
+                    <div class="navigation-item" id="apps">
+                        <i class="bi bi-window-stack" id="icon"></i>
+                        <p id="item">Apps</p>
+                    </div>
+                </div>
+                <div class="active-item"></div>
+            </div>
+            <div class="navigation-logout">
+                <i class="bi bi-box-arrow-right" id="icon"></i>
+                <p id="item">Log out</p>
+            </div>
+        </div>
+
+
+
+        <div class="billing-container">
+            <div class="main-billing-container">
+                <h1 id="billing-title">Billing</h1>
+                <p id="order-history">Order History</p>
+                <p id="order-history-description">Manage billing information and view receipts</p>
+                <table class="billing-table">
+                    <thead>
+                        <th scope="col-names">Date</th>
+                        <th scope="col-names">Type</th>
+                        <th scope="col-names">Receipt</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="date-col">Oct. 21, 2021</td>
+                            <td scope="type-col">Pro Annual</td>
+                            <td><button>Download</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="date-col">Aug. 21, 2021</td>
+                            <td scope="type-col">Pro Portfolio</td>
+                            <td><button>Download</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="date-col">July. 21, 2021</td>
+                            <td scope="type-col">Sponsored Post</td>
+                            <td><button>Download</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="date-col">Jun. 21, 2021</td>
+                            <td scope="type-col">Sponsored Post</td>
+                            <td><button>Download</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="">Load more</a>
+
+                <div class="payment-method">
+                <p id="payment-history">Payment Method</p>
+                <p id="payment-history-description">Manage billing information and view receipts</p>
+                <div class="method">
+                    <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" alt="">
+                    <p id="card-desc">Visa ending in 2255</p>
+                    <button>Remove</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="plan-container">
+            <div class="your-plan">
+                <div class="plan-info">
+                    <p id="plan-title">Your plan</p>
+                    <h1 id="plan-status"> Pro Annual</h1>
+                    <p id="plan-renewal">Renews on Nov, 2023</p>
+                </div>
+                <button id="cancel-btn"><span id="cancel-txt">Cancel Subscription</span></button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

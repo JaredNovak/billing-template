@@ -1,0 +1,343 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #e8e8fd;
+}
+
+#background-decoration {
+    position: absolute;
+    height: 80%;
+    min-width: 206px;
+    width: 16%;
+    background-color: #ee4d38;
+    border-radius: 25px;
+    left: 3%;
+    margin: 5% 0 20% 0;
+    z-index: 1;
+    top: 0%;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #fafaff;
+    z-index: 2;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 900px;
+    height: 70%;
+    border-radius: 20px;
+    top: 10%;
+    left: -4%;
+}
+
+.directory-container {
+    flex-basis: 25%;
+    background-color:#f8f8ff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid black;
+}
+
+.billing-container {
+    flex-basis: 50%;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+.plan-container {
+    flex-basis: 25%;
+    background-color: #ffffff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid black;
+}
+
+
+.user-container {
+    display: flex;
+    flex-direction: row;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 10% 5% 10% 10%;
+    align-content: center;
+    align-items: center;
+    justify-content: start;
+    justify-items: start;
+}
+
+.user-container img {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    margin: 3px;
+}
+
+.user-information {
+    margin-left: 3%;
+}
+
+#name {
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding-top: 2.5%;
+    margin-bottom: 0;
+}
+
+#username {
+    opacity: 60%;
+    font-size: 0.67rem;
+    margin-top: 1px;
+}
+
+.navigation-menu {
+    position: relative;
+    margin: 20% 0% 0% 0%;
+    width: 100%;
+    height: 72%;
+    background-color: #f8f8ff;
+}
+
+.navigation-items {
+    width: 90%;
+}
+
+.navigation-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation-logout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 8%;
+  cursor: pointer;
+}
+
+.navigation-logout:hover {
+    transform: translateY(-3%);
+}
+
+.navigation-item:hover {
+    transform: translateY(-3%);
+}
+
+.active-item {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  height: calc(100% / 11.5);
+  width: 3%;
+  border-radius: 10px;
+  background-color: red;
+  transition: all 0.3s ease;  
+}
+
+.navigation-item.active #item {
+    font-weight: bold;
+    opacity: 100%;
+}
+
+
+
+#icon {
+    margin-left: calc(10% + 3px);
+    margin-right: 10%;
+    width: 20%;
+} 
+
+#item {
+    font-size: 0.8rem;
+    opacity: 60%;
+    width: 80%; 
+}
+
+#active {
+    width: 10%;
+    background-color: red;
+}
+
+
+
+.your-plan {
+    width: 80%;
+    height: 25%;
+    background-color: #ee4d38;
+    margin: 40% auto auto auto;
+    border-radius: 10px;
+}
+
+#cancel-btn {
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0% 2% 10% 5%;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid #ffffff8e;
+    outline: none;
+}
+
+#cancel-btn:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cancel-txt {
+    color: #f8f8F8;
+    opacity: 90%;
+}
+
+.plan-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#plan-title{
+    color: #f8f8ff;
+    opacity: 85%;
+    font-size: 0.8rem;
+    margin: 10% 0 10% 0;
+}
+
+#plan-status {
+    color: #f8f8ff;
+    font-size: 1.3rem;
+    opacity: 85%;
+    margin: 0 0 7% 0;
+}
+
+#plan-renewal{
+    color: #f8f8ff;
+    opacity: 85%;
+    font-size: 0.8rem;
+    margin: 0 0 10% 0;
+}
+
+.main-billing-container {
+    display: flex;
+    flex-direction: column;
+    margin: 6%;
+}
+
+#billing-title {
+    font-size: 1.8rem;
+}
+
+#order-history {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#order-history-description {
+    font-size: 0.85rem;
+    opacity: 60%;
+    margin-top: 2%;
+}
+
+table {
+    margin-top: 10%;
+}
+
+table button {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    width: 80%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+th[scope="col-names"] {
+    text-align: left;
+    font-size: 0.7rem;
+    opacity: 50%;
+}
+
+td[scope="date-col"] {
+    color: #000000;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+td[scope="type-col"]{
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+tbody tr:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+tbody tr td {
+  padding: 10px 0 10px 0;
+}
+
+a {
+    font-size: 0.8rem;
+    color: #ee4d38;
+    margin-top: 3%;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10%;
+}
+
+.method {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.method img {
+    width: 60px;
+    height: auto;
+    border: 0.5px solid rgb(184, 183, 183);
+    border-radius: 3px;
+}
+
+#payment-history {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-bottom: 0;
+}
+
+#payment-history-description {
+    font-size: 0.85rem;
+    opacity: 60%;
+    margin-top: 2%;
+}
+
+#card-desc {
+    font-size: 0.8rem;
+    margin-left: 5%;
+}
+
+.method button {
+    height: 20%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: transparent;  
+    margin-left: 25%;  
+    cursor: pointer;
+}
+
+.method button:hover{
+    transform: translateY(-0.5px);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
